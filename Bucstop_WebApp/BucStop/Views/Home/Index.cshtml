@@ -1,4 +1,4 @@
-﻿﻿﻿@{
+﻿﻿@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -40,7 +40,7 @@
             {
         <div class="carousel-item active">
             <a href="@Url.Action("Play", "Games", new { id = @game.Id })" style="text-decoration: none;">
-                <img src=@game.Thumbnail alt="@game.Title" class="d-block" style="width:100%; height:500%;">
+                <img src=@game.Thumbnail alt="@game.Title" class="d-block" style="width:100%; height:200px;">
             </a>
         </div>
             }
@@ -48,7 +48,7 @@
             {
         <div class="carousel-item">
             <a href="@Url.Action("Play", "Games", new { id = @game.Id })" style="text-decoration: none;">
-                <img src=@game.Thumbnail alt="@game.Title" class="d-block" style="width:100%; height:500%;">
+                <img src=@game.Thumbnail alt="@game.Title" class="d-block" style="width:100%; height:200px;">
             </a>
         </div>
             }
